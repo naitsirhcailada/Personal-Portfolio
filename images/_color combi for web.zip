@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/about.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Portfolio</title>
+</head>
+
+<body>
+ 
+  <div class="container">
+
+      <header>
+      
+        <img src="images/dazzle.png" alt="Logo">
+        <span>Portfolio</span>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="work.html">Work</a>
+          <a href="#">About</a>
+      
+        </div>
+      
+      </header>
+      <main>
+    <div class="row">
+      <div class="fname">
+
+          <div class="fullname"><p>Christian Adalia <br>
+            <span> Software Developer</span></p>
+          </div>
+
+          <div class="descrip"><p>A NEWBIE FRONT-END DEVELOPER WHO IS STARTING A JOURNEY OF BEING DEVELOPER THAT FOCUSES ON WEB DEVELOPMENT</p></div>
+        
+      </div>
+     
+      <div class="row-1">
+        <img src="images/HD-wallpaper-mikey-tokyo-revengers-toman-japan-mafia-sano-manjiro.jpg"
+      alt="Profile">
+            </div>
+     
+        </div>
+
+        <div class="col">
+        
+          <a href="" Download="../color combi for web.zip"><button type="submit" class="btnproject">Download Project <i class="fa-solid fa-download"></i></button></a>
+      
+          <p class="prog">Programming Language</p>
+            <div class="col-1">
+              <p>HTML</p>
+                <p>CSS</p>
+                  <p>JS</p>
+                    <p>BOOTSTRAP</p>
+                    <div class="col-2">
+                      <i class="fa-solid fa-code"></i>
+                      <i class="fa-brands fa-css3"></i>
+                      <i class="fa-brands fa-js"></i>
+                      <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+            </div>
+            
+        </div>
+  </main>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
