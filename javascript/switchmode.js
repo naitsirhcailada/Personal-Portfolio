@@ -23,3 +23,5 @@
     root.style.setProperty('--black', '#000');
     root.style.setProperty('--tertiarycolor', '#383B53');
   }
+
+ 
