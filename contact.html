@@ -22,9 +22,11 @@
         <i class="fa-solid fa-envelope"></i>
         <h1>Email</h1>
       </div>
-     
-      <p id="email">naitsirhcailada0024@gmail.com</p>
-      <h6>Do no share to anyone</h6>
+   
+      <strong><p id="email">naitsirhcailada0024@gmail.com</p></strong>
+      
+   
+      <h6>Do not share to anyone</h6>
     </div>
   </div>
 
@@ -37,8 +39,8 @@
         <h1>Phone Number</h1>
       </div>
   
-      <p id="email">09123456789</p>
-      <h6>Do no share to anyone</h6>
+      <strong><p id="email">09123456789</p></strong>
+      <h6>Do not share to anyone</h6>
     </div>
   </div>
  
@@ -46,13 +48,29 @@
     <div class="modal-body">
      
       <div class="modal-header">
-      <i class="fa-brands fa-facebook-messenger"></i>
-        <h1>Messenger / Facebook Account</h1>
+      <i class="fa-solid fa-share"></i>
+        <h1>Social Media</h1>
       </div>
-  
-      <p id="email">Christian Adalia</p>
-      <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank"><p class="messengerlink">Send a Message</p></a>
-      <h6>Do no share to anyone</h6>
+      <div class="socialmedia">
+          <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank">
+            <p class="messengerlink">Facebook</p>
+                <span><i class="fa-brands fa-facebook"></i></span>
+          </a>
+          <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank">
+            <p class="messengerlink">LinkedIn</p>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+            </a>
+            <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank">
+              <p class="messengerlink">Email</p>
+              <span><i class="fa-solid fa-envelope"></i></span>
+            </a>
+              <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank">
+                <p class="messengerlink">Instagram</p>
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+      </div>
+      
+      <h6>Do not share to anyone</h6>
     </div>
   </div>
 
@@ -60,15 +78,18 @@
     <div class="modal-body">
       
       <div class="modal-header">
-      <i class="fa-brands fa-instagram"></i>
-        <h1>Instagram</h1>
+      <i class="fa-solid fa-location-dot"></i>
+        <h1>Address</h1>
       </div>
   
-      <p id="email">@christ.adalia</p>
-      <a href="https://www.google.com/?&bih=980&biw=1869&hl=en" target="_blank">
-        <p>Send a Message</p>
-      </a>
-      <h6>Do no share to anyone</h6>
+      <p id="email">Kumintang Ilaya Batangas City</p>
+      
+  <iframe
+    src="https://maps.google.com/maps?q=batangas%20city%20villa%20precy&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            frameborder="0" scrolling="no" ></iframe>
+
+     
+      <h6>Do not share to anyone</h6>
     </div>
   </div>
   
@@ -91,7 +112,7 @@
       </div>
     </header>
     <main>
-      <div class="parent">
+
         <div class="circle"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
@@ -103,31 +124,34 @@
         <div class="rectangle2"></div>
         <div class="rectangle3"></div>
         <div class="rectangle4"></div>
-      </div>
+
     <div class="card">
-      <div class="cardtitle">
-        <p>Contact Information</p>
-      </div>
+     
       <div class="cardbody">
-        <table>
-          <tr>
-            <td><button type="button" class="btn-email" id="btn-email"><i class="fa-solid fa-envelope"></i></button></td>
-            <td><button type="button" class="btn-contact"><i class="fa-solid fa-phone"></i></button></td>
-          </tr>
-          <tr>
-            <td>Email</td>
-            <td>Contact</td>
-          </tr>
-          
-          <tr>
-            <td><button type="button" class="btn-messenger"><i class="fa-brands fa-facebook-messenger"></i></button></td>
-            <td><button type="button" class="btn-instagram"><i class="fa-brands fa-instagram"></i></button></td>
-          </tr>
-          <tr>
-            <td>Messenger</td>
-            <td>Instagram</td>
-          </tr>
-        </table>
+        <div class="cardtitle">
+        <p>Get In Touch</p>
+        <h6>Click to see Details</h6>
+        </div>
+
+        <div class="email-contact">
+          <button type="button" class="btn-email" id="btn-email"><i class="fa-solid fa-envelope"></i></button>
+          <p>Email</p>
+          <button type="button" class="btn-contact"><i class="fa-solid fa-phone"></i></button>
+          <p>Contact Number</p>
+          </div>
+        
+          <div class="messenger-instagram">
+            <button type="button" class="btn-messenger"><i class="fa-brands fa-facebook"></i></button>
+            <p>Social Media</p>
+            <button type="button" class="btn-instagram"><i class="fa-solid fa-location-dot"></i></button>
+            <p>Address</p>
+          </div>
+        
+
+
+    
+
+
  
     </div>
 </div>
@@ -140,8 +164,8 @@
   // Get the modal
   var modal = document.getElementById("mymodal");
   var contactmodal = document.getElementById("contactmodal");
-   var messengermodal = document.getElementById("messengermodal");
-    var instagrammodal = document.getElementById("instagrammodal");
+  var messengermodal = document.getElementById("messengermodal");
+  var instagrammodal = document.getElementById("instagrammodal");
   // Get the button that opens the modal
   var btn = document.getElementsByClassName("btn-email");
   var btncontact = document.getElementsByClassName("btn-contact");
