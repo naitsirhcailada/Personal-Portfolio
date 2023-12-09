@@ -62,7 +62,10 @@ header{
   color: darksalmon;
   transition: all 0.3s ease-in-out;
   transform: scale(1.5);
+
 }
+
+
 #bars{
   display: none;
 }
@@ -113,6 +116,8 @@ img{
     width: 80%;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
+    gap:2rem;
 } 
 
 a{
@@ -124,6 +129,7 @@ a{
     padding: 20px;
     font-family: 'Archivo', sans-serif;
 }
+
 
 .myname, .frontend, h3 {
   color: var(--black);
@@ -325,7 +331,7 @@ p.myname{
   z-index: -2;
 }
 
-.responsive-navbar{
+/* .responsive-navbar{
   background-color: #7c7c7c80;
   display: none;
   flex-direction: column;
@@ -343,8 +349,10 @@ p.myname{
   list-style: none;
   font-size: 2rem;
   gap: 3rem;
-}
- 
+} */
+.icon {
+  display: none;
+} 
  @media screen and (max-width: 600px) {
    * {
     transition: all 0.3s ease-in-out;
@@ -354,12 +362,48 @@ p.myname{
     flex-direction: column;
     justify-content: space-evenly;
    }
-   header > .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+   header {
+    background-color: #7c7c7c80;
    }
+  
+   .navbar {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+   }
+ 
+.navbar a 
+{
+  display: none;
+}
+  
+.navbar a.icon 
+{
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+.navbar.responsive 
+{
+  position: relative;
+}
+.navbar.responsive .icon 
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+      
+.navbar.responsive a 
+{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+   
    header > img {
     width: 50px;
     height: 50px;
@@ -367,9 +411,9 @@ p.myname{
    .frontend {
     font-size: 0.9rem;
    }
-   .navbar > a, i {
+   /* .navbar > a, i {
     font-size: 1rem;
-   }
+   } */
    p.myname {
     font-size: 1.5rem;
    }

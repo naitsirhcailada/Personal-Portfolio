@@ -28,7 +28,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  line-height: 80px;
 }
 
 img {
@@ -46,6 +45,11 @@ img {
   width: 80%;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
+  gap: 2rem;
+}
+.navbar .icon {
+  display: none;
 }
 .navbar a:hover {
   color: darksalmon;
@@ -312,23 +316,52 @@ main{
     flex-direction: row;
     justify-content: center;
   }
+  header 
+{
+  background-color: #7c7c7c80;
+}
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+  
 
-  header>.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+    .navbar a {
+      display: none;
+    }
+  
+    .navbar a.icon {
+      float: right;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .navbar.responsive {
+      position: relative;
+    }
+  
+    .navbar.responsive .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    .navbar.responsive a {
+      float: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
   header>img {
     width: 50px;
     height: 50px;
   }
 
-  .navbar > a,
-  i {
-    font-size: 1rem;
-  }
   .row {
     display: flex;
     flex-direction: row;

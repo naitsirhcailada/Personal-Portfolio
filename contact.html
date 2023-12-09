@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="css/contact.css">
   <meta charset="UTF-8">
+  <script type="text/javascript" src="/javascript/responsive-navbar.js"></script>
   <script type="text/javascript" src="/javascript/switchmodecontact.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-  <div class="modal" id="mymodal">
+  <!-- <div class="modal" id="mymodal">
     
     <div class="modal-body">
     
@@ -28,10 +29,10 @@
    
       <h6>Do not share to anyone</h6>
     </div>
-  </div>
+  </div> -->
 
 
-  <div class="modal" id="contactmodal">
+  <!-- <div class="modal" id="contactmodal">
     <div class="modal-body">
      
       <div class="modal-header">
@@ -39,10 +40,10 @@
         <h1>Phone Number</h1>
       </div>
   
-      <strong><p id="email">09123456789</p></strong>
+      <strong><p id="email">+639-123-456-789</p></strong>
       <h6>Do not share to anyone</h6>
     </div>
-  </div>
+  </div> -->
  
   <div class="modal" id="messengermodal">
     <div class="modal-body">
@@ -98,13 +99,16 @@
     
       <img src="images/dazzle.png" alt="Logo">
       <span>Portfolio</span>
-      <div class="navbar">
-        <a href="index.html">Home</a>
+      <div class="navbar" id="mynavbar">
+        <a href="index.html" >Home</a>
         <a href="#">Contact</a>
         <a href="work.html">Work</a>
         <a href="about.html">About</a>
     
           <div class="switch">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
             <p id="active" onclick="darkmode()"><i class="fa-solid fa-moon"></i></p>
             <p id="light" onclick="lightmode()"><i class="fa-solid fa-sun"></i></p>
           </div>
@@ -129,19 +133,21 @@
      
       <div class="cardbody">
         <div class="cardtitle">
-        <p>Get In Touch</p>
+        <p>Contact Us</p>
         <h6>Click to see Details</h6>
         </div>
 
         <div class="email-contact">
-          <button type="button" class="btn-email" id="btn-email"><i class="fa-solid fa-envelope"></i></button>
+          <!-- <button type="button" class="btn-email" id="btn-email"><i class="fa-solid fa-envelope"></i></button>
           <p>Email</p>
           <button type="button" class="btn-contact"><i class="fa-solid fa-phone"></i></button>
-          <p>Contact Number</p>
+          <p>Phone</p> -->
+       
+          <i class="fa-solid fa-paper-plane"></i>
           </div>
         
           <div class="messenger-instagram">
-            <button type="button" class="btn-messenger"><i class="fa-brands fa-facebook"></i></button>
+            <button type="button" class="btn-messenger"><i class="fa-solid fa-share"></i></button>
             <p>Social Media</p>
             <button type="button" class="btn-instagram"><i class="fa-solid fa-location-dot"></i></button>
             <p>Address</p>
@@ -162,25 +168,25 @@
 </html>
 <script>
   // Get the modal
-  var modal = document.getElementById("mymodal");
-  var contactmodal = document.getElementById("contactmodal");
+  // var modal = document.getElementById("mymodal");
+  // var contactmodal = document.getElementById("contactmodal");
   var messengermodal = document.getElementById("messengermodal");
   var instagrammodal = document.getElementById("instagrammodal");
   // Get the button that opens the modal
-  var btn = document.getElementsByClassName("btn-email");
-  var btncontact = document.getElementsByClassName("btn-contact");
+  // var btn = document.getElementsByClassName("btn-email");
+  // var btncontact = document.getElementsByClassName("btn-contact");
   var btnmessenger = document.getElementsByClassName("btn-messenger");
   var btninstagram = document.getElementsByClassName("btn-instagram");
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
     
   // When the user clicks the button, open the modal 
-  btn[0].onclick = function () {
-    modal.style.display = "block";
-  }
-  btncontact[0].onclick = function () {
-      contactmodal.style.display = "block";
-    }
+  // btn[0].onclick = function () {
+  //   modal.style.display = "block";
+  // }
+  // btncontact[0].onclick = function () {
+  //     contactmodal.style.display = "block";
+  //   }
      btnmessenger[0].onclick = function () {
         messengermodal.style.display = "block";
       }
@@ -193,9 +199,9 @@
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
-    if (event.target == modal || event.target == contactmodal || event.target == messengermodal || event.target == instagrammodal) {
-      modal.style.display = "none";
-       contactmodal.style.display = "none";
+    if (event.target == messengermodal || event.target == instagrammodal) {
+      // modal.style.display = "none";
+      //  contactmodal.style.display = "none";
        messengermodal.style.display = "none";
        instagrammodal.style.display = "none";
     }
