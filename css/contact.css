@@ -52,11 +52,11 @@ img {
 a {
   position: relative;
   text-decoration: none;
-  color: var(--black);
   font-size: 1.5rem;
   margin-left: 10px;
   padding: 20px;
   font-family: 'Archivo', sans-serif;
+  color: var(--black);
 }
 .navbar a:hover {
   color: darksalmon;
@@ -327,7 +327,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+  gap: 1rem;
 }
 span > i{
   color: #f5f5f5;
