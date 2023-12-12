@@ -55,7 +55,7 @@ img {
   color: darksalmon;
   transition: all 0.3s ease-in-out;
 
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 span {
   color: var(--tertiarycolor);
@@ -70,6 +70,24 @@ a {
   margin-left: 10px;
   padding: 20px;
   font-family: 'Archivo', sans-serif;
+  overflow: hidden;
+  transition: all 1s;
+}
+a::before {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #3AA7A3;
+  width: 80%;
+  height: 1px;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: translateX(0);
 }
 
 .container {
@@ -234,7 +252,27 @@ main{
     cursor: pointer;
     border: none;
     font-size: 20px;
+    transition: all 1s;
+    overflow: hidden;
+  }
+
+.btnproject::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00A896;
+  z-index: -1;
+  transition: all 1s;
+  transform: translateX(-100%);
 }
+.btnproject:hover::before {
+  transform: translateX(0);
+}
+
+
 .btnproject:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);

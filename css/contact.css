@@ -57,11 +57,29 @@ a {
   padding: 20px;
   font-family: 'Archivo', sans-serif;
   color: var(--black);
+  overflow: hidden;
+  transition: all 1s;
+}
+a::before {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #3AA7A3;
+  width: 80%;
+  height: 1px;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: translateX(0);
 }
 .navbar a:hover {
   color: darksalmon;
   transition: all 0.3s ease-in-out;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 span {
   color: var(--tertiarycolor);
@@ -187,6 +205,8 @@ td{
 
 
 .email-contact {
+  position: relative;
+  bottom: 4em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
