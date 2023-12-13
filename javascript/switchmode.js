@@ -5,7 +5,7 @@
   document.getElementById('active').style.display = "block";
   document.getElementById('light').style.display="block";
   document.getElementById('container').style.background="#363062";
-
+  document.getElementsByTagName('img')[0].style.mixBlendMode = "normal";
     const root = document.querySelector(':root');
     root.style.setProperty('--black','#f5f5f5');
     root.style.setProperty('--tertiarycolor', '#F5E8C7');
@@ -17,7 +17,7 @@
   document.getElementById('light').style.display = "block";
   document.getElementById('active').style.display="block";
   document.getElementById('container').style.background="#D4D6B9";
-   
+  document.getElementsByTagName('img')[0].style.mixBlendMode = "darken";
 
     const root = document.querySelector(':root');
     root.style.setProperty('--black', '#000');

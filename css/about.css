@@ -36,6 +36,7 @@ img {
   height: 100px;
   object-fit: cover;
   mix-blend-mode: darken;
+  border-radius: 50%;
 }
 
 .navbar {
@@ -71,9 +72,9 @@ a {
   padding: 20px;
   font-family: 'Archivo', sans-serif;
   overflow: hidden;
-  transition: all 1s;
+  transition: all .3s;
 }
-a::before {
+.navbar a::before {
   content: '';
   position: absolute;
   top: 70%;
@@ -81,12 +82,12 @@ a::before {
   background-color: #3AA7A3;
   width: 80%;
   height: 1px;
-  transition: all 1s;
-  transform: translateX(-100%);
+  transition: all .3s;
+  transform: translateX(-120%);
   z-index: -1;
 }
 
-a:hover::before {
+.navbar a:hover::before {
   transform: translateX(0);
 }
 
@@ -378,6 +379,7 @@ main{
   
     .navbar.responsive {
       position: relative;
+      gap: 5px;
     }
   
     .navbar.responsive .icon {
@@ -393,6 +395,7 @@ main{
       align-items: center;
       justify-content: center;
       text-align: center;
+      font-size: 1rem;
     }
 
   header>img {
